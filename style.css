@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+.main-header {
+  background: url("./images/desktop/image-header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+}
+
+/* NAV HEADER */
+
+.header-nav {
+  padding: 40px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-container {
+  display: flex;
+  gap: 50px;
+}
+
+.links-li {
+  list-style: none;
+}
+
+.links-a:link,
+.links-a:visited {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.links-a:hover {
+  background-color: #fed900;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.links-last,
+.links-last:visited {
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+  background-color: #fed900;
+  padding: 1rem 2rem;
+  border-radius: 25px;
+}
+
+.links-last:hover {
+  color: white;
+}
+
+.header-title {
+  text-align: center;
+  color: white;
+  font-size: 64px;
+  margin: 160px auto 0 auto;
+  letter-spacing: 0.8rem;
+  font-weight: bolder;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.grid-el {
+  width: 50%;
+  height: 720px;
+}
+
+.el-2 {
+  background: url("./images/desktop/image-transform.jpg");
+}
+
+.el-3 {
+  background: url("./images/desktop/image-stand-out.jpg");
+}
+
+.el-5 {
+  background: url("./images/desktop/image-graphic-design.jpg");
+}
+
+.el-6 {
+  background: url("./images/desktop/image-photography.jpg");
+}
+
+.el-2,
+.el-3,
+.el-5,
+.el-6 {
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+
+.el-1,
+.el-4 {
+  align-self: center;
+  justify-self: center;
+  width: 70%;
+  height: fit-content;
+}
+
+.el-5,
+.el-6 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.about-header {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.about-text {
+  font-size: 20px;
+  text-align: justify;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.about-link:link,
+.about-link:visited {
+  padding: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.about-link:hover {
+  background-color: #fed900;
+  border-radius: 5px;
+  transition: all 0.4s;
+}
+/* text for the last 2 */
+
+.element-content {
+  width: 40%;
+  height: fit-content;
+}
+
+.about-header-last2 {
+  color: #25564b;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 40px;
+}
+
+.about-text-last2 {
+  font-weight: bold;
+  color: #19536b;
+  margin-bottom: 50px;
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonial {
+  margin-bottom: 100px;
+}
+
+.testimonial-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  font-size: 40px;
+  letter-spacing: 8px;
+  font-weight: bold;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.testimonial-el {
+  width: 20%;
+  text-align: center;
+}
+
+/* testimonial component */
+.testi-img {
+  border-radius: 50%;
+  width: 80px;
+  margin-bottom: 40px;
+}
+
+.testi-text {
+  font-size: 16px;
+  color: gray;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.testi-name {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.testi-ocupation {
+  font-weight: bold;
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+/* gallery */
+
+.gallery {
+  display: flex;
+}
+
+.gallery-el {
+  width: 25%;
+  height: auto;
+}
+
+/* footer */
+
+.footer {
+  padding: 50px 0;
+  background-color: #458c7e;
+  text-align: center;
+}
+
+.footer-nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-bottom: 80px;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #25564b;
+  font-weight: bold;
+}
+
+.social {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.logo-footer {
+  margin-bottom: 40px;
+}
+
+.filter-cyan {
+  filter: invert(28%) sepia(6%) saturate(3740%) hue-rotate(116deg)
+    brightness(92%) contrast(87%);
+}
